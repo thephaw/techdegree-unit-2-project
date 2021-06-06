@@ -185,7 +185,7 @@ Contact Section
 Media Queries
 --------------------------------*/
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {    /* Adds white box around navigation buttons up to the first breakpoint */
     .button {
         width: 80vw;
         max-width: 350px;
