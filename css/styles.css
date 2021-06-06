@@ -9,28 +9,92 @@ UNIVERSAL STYLES
 }
 
 .wrapper {
-    max-width: 1024px;
+    max-width: 1440px;
+    margin: auto;
 }
 
-/* Fonts */
+body {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+main {
+    display: block;
+    width: 100%;
+    background-color: white;
+}
+
+hr {
+    width: 95vw;
+}
+
+/* Font and Link Styles */
+
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 body {
     font-family: 'Signika Negative', sans-serif;
+}
+
+ul, 
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .95em;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 .nav-links {
     font-family: 'Fredoka One', cursive;
 }
 
+.about-me p {
+    font-weight: 300;
+    font-size: .95em;
+    padding-bottom: 2em;
+}
+
+.project p {
+    font-weight: 300;
+}
 
 /* 
 --------------------------------
 Profile Section
 --------------------------------*/
 
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
 
+.about-me img {
+    width: 60vw;
+    max-width: 350px;
+    margin-bottom: 2em;
+}
 
-
+.about-me p {
+    width: 80vw;
+    max-width: 400px;
+    margin: auto;
+    font-weight: 300;
+}
 
 /* 
 --------------------------------
@@ -38,8 +102,31 @@ Portfolio Section
 --------------------------------*/
 
 
+h2 {
+    padding: 2em 0 1em 0;
+}
 
+.main-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
 
+.project {
+    width: 90vw;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project p {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2em;
+}
 
 /* 
 --------------------------------
@@ -56,12 +143,100 @@ Extra Section
 Contact Section
 --------------------------------*/
 
+.bot-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5em 1em 2em 1em;
+    font-size: .9em;
+}
 
-
-
-
+.bot-3,
+.bot-4,
+.bot-5 {
+    display: none;
+}
 
 /* 
 --------------------------------
 Media Queries
 --------------------------------*/
+
+@media only screen and (max-width: 767px) {
+    .button {
+        width: 80vw;
+        max-width: 350px;
+        background-color: white;
+        padding: .5em;
+        margin: 3px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 2em;
+    } 
+
+    .top-nav {
+        display: flex;
+        width: 500px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .project {
+        width: 40vw;
+    }
+
+    .bot-2 {
+        display: none;
+    }
+    
+    .bot-3,
+    .bot-4,
+    .bot-5 {
+        display: inline;
+        padding: 0 1em 0 0;
+    }
+
+    .bot-1 {
+        flex: 2;
+        text-align: left;
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    main {
+        width: 95vw;
+        max-width: 1368px;
+        margin: auto;
+    }
+
+    .main-section {
+        width: 95vw;
+        max-width: 1368px;
+        margin: auto;
+    }
+
+    .project {
+        width: 30%;
+        padding: 0;
+    }
+
+
+
+}

@@ -12,66 +12,84 @@
 
 <body>
     
-    <div class="wrapper"> <!-- WRAPPER DIV -->
+    <div class="wrapper"> <!-- WRAPPER DIV START-->
 
         <header>
-            <h1>Student Name</h1>
-            <nav class="nav-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-
-            <img src="images/responsive-layout-profile.png" alt="Picture of Student Name">
-            <p>Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            <div class="top-section">
+                <h1>Student Name</h1>
+                <nav class="nav-links">
+                    <ul class="top-nav">
+                        <li class="button"><a href="#">Home</a></li>
+                        <li class="button"><a href="#portfolio">Portfolio</a></li>
+                        <li class="button"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="about-me">
+                <img src="images/responsive-layout-profile.png" alt="Picture of Student Name">
+                <p>Hi! I'm a front-end developer who loves responsive design and css.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            </section>
         </header>
 
         <main>
-            <section>
-                <h2>Portfolio</h2>
-                <img src="images/portfolio-1.png" alt="Portfolio">
-                <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
-                
-                <h2>Search Page</h2>
-                <img src="images/portfolio-2.png" alt="Search Page">
-                <p>This project searches through a specific database to find information that the user is trying to look up.</p>
             
-                <h2>Travel App</h2>
-                <img src="images/portfolio-3.png" alt="Travel App">
-                <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-
-                <h2>Map of Favorite Spots</h2>
-                <img src="images/portfolio-4.png" alt="Map of Favorite Spots">
-                <p>This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-            
-                <h2>Photo Gallery</h2>
-                <img src="images/portfolio-5.png" alt="Photo Gallery">
-                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-
-                <h2>Calculator</h2>
-                <img src="images/portfolio-6.png" alt="Calculator">
-                <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+            <h2 id="portfolio">Portfolio</h2>
+            <section class="main-section">    
+                <div class="project">
+                    <img src="images/portfolio-1.png" alt="Marketing Page">
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
+                </div>
+                <div class="project">
+                    <img src="images/portfolio-2.png" alt="Search Page">
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                </div>
+                <div class="project">    
+                    <img src="images/portfolio-3.png" alt="Travel App">
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+                </div>
+                <div class="project">    
+                    <img src="images/portfolio-4.png" alt="Map of Favorite Spots">
+                    <h3>Map of Favorite Spots</h3>
+                    <p>This project uses mapping APIs to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+                </div>
+                <div class="project">
+                    <img src="images/portfolio-5.png" alt="Photo Gallery">
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+                </div>
+                <div class="project">
+                    <img src="images/portfolio-6.png" alt="Calculator">
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+                </div>
             </section>
         </main>
 
         <footer>
             <section>
-                <h3>Contact</h3>
+                <h2 id="contact">Contact</h2>
                 <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+                <p><strong>Phone</strong> &nbsp; +1(111)555-1234</p>
+                <p><strong>Email</strong> &nbsp; email@yoursite.com</p>
             </section>    
-            <nav>
-                <ul>
-                    <li><a href="#">Back to Top</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+
+            <hr>
+
+            <nav class="nav-links">
+                <ul class="bot-nav">
+                    <li class="bot-1"><a href="#">Student Name</a></li>
+                    <li class="bot-2"><a href="#">Back to Top</a></li>
+                    <li class="bot-3"><a href="#">Home</a></li>
+                    <li class="bot-4"><a href="#portfolio">Portfolio</a></li>
+                    <li class="bot-5"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </footer>
 
-    </div>
+    </div> <!-- WRAPPER DIV END-->
 
 </body>
 </html>
