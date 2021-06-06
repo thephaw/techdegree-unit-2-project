@@ -3,34 +3,30 @@
 UNIVERSAL STYLES 
 --------------------------------*/
 
+
 * {
     box-sizing: border-box;
-}
-
-.nav-links {
-    font-family: 'Fredoka One', cursive;
 }
 
 .wrapper {
     max-width: 1024px;
 }
 
+/* Fonts */
+
 body {
     font-family: 'Signika Negative', sans-serif;
 }
 
+.nav-links {
+    font-family: 'Fredoka One', cursive;
+}
 
 
 /* 
 --------------------------------
-
+Profile Section
 --------------------------------*/
-
-
-
-
-
-
 
 
 
@@ -38,18 +34,17 @@ body {
 
 /* 
 --------------------------------
-
+Portfolio Section
 --------------------------------*/
 
 
 
 
 
-
-
-
-
-
+/* 
+--------------------------------
+Extra Section
+--------------------------------*/
 
 
 
@@ -58,13 +53,8 @@ body {
 
 /* 
 --------------------------------
-
+Contact Section
 --------------------------------*/
-
-
-
-
-
 
 
 
