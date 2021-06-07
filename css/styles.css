@@ -9,14 +9,24 @@ UNIVERSAL STYLES
 }
 
 .wrapper {
-    max-width: 1440px;
-    margin: auto;
-}
-
-header {
     max-width: 1024px;
     margin: auto;
 }
+
+.skills-section {
+    background-color: powderblue;
+}
+
+a:hover {
+    color: lightslategray;
+}
+
+header {
+    background-color: lightgrey;
+    /* max-width: 1024px; */
+    margin: auto;
+}
+
 
 body {
     background-color: #f5f5f5;
@@ -24,15 +34,20 @@ body {
     margin: auto;
 }
 
+footer {
+    background-color: lightgrey;
+}
+
 main {
     display: block;
     width: 100%;
-    background-color: white;
+    background-color: lightsteelblue;
 }
 
 hr {
+    border-color: black;
     width: 95vw;
-    max-width: calc(.95 * 1440px);
+    max-width: calc(.95 * 1024px);
 }
 
 /* Font and Link Styles */
@@ -55,6 +70,7 @@ ul li {
 }
 
 h2 {
+    margin: 0;
     font-weight: 600;
     text-transform: uppercase;
     font-size: .95em;
@@ -71,7 +87,7 @@ h3 {
 .about-me p {
     font-weight: 400;
     font-size: .95em;
-    padding-bottom: 2em;
+    padding: 0 1em 2em 1em;
     line-height: 1.2em;
 }
 
@@ -105,7 +121,6 @@ Profile Section
 }
 
 .about-me p {
-    width: 80vw;
     max-width: 400px;
     margin: auto;
     font-weight: 300;
@@ -144,13 +159,30 @@ h2 {
 
 /* 
 --------------------------------
-Extra Section
+Skills Section
 --------------------------------*/
 
+progress {
+    text-align:center;
+    height: 1em;
+    width: 50%;
+    max-width: 450px;
+    border: none;
+    margin: 1em 1em 2em 1em;
+  }
+  progress:before {
+    content: attr(data-label);
+    font-size: 1em;
+  }
 
+.skills-section {
+    padding: auto;
+}
 
-
-
+.skills-section p {
+    margin: 0;
+    padding: 2em;
+}
 
 /* 
 --------------------------------
@@ -161,13 +193,15 @@ Contact Section
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 1.5em 1em 2em 1em;
+    margin: 1.5em 1em 0;
     font-size: .9em;
+    padding-bottom: 1em;
 }
 
 .bot-3,
 .bot-4,
-.bot-5 {
+.bot-5,
+.bot-6 {
     display: none;
 }
 
@@ -189,7 +223,7 @@ Media Queries
     .button {
         width: 80vw;
         max-width: 350px;
-        background-color: white;
+        background-color: darkgray;
         padding: .5em;
         margin: 3px;
     }
@@ -206,14 +240,14 @@ Media Queries
 
     .top-nav {
         display: flex;
-        width: 500px;
+        width: 700px;
         flex-direction: row;
         justify-content: space-around;
     }
 
     .about-me img {
         float: right;
-        width: 25vh;
+        width: 40%;
         margin-left: 3em;
         margin-right: 3em;
     }
@@ -222,7 +256,7 @@ Media Queries
         text-align: left;
         max-width: none;
         margin-left: 5vw;
-        margin-bottom: 150px;
+        padding-bottom: 200px;
     }
 
 
@@ -247,7 +281,8 @@ Media Queries
     
     .bot-3,
     .bot-4,
-    .bot-5 {
+    .bot-5,
+    .bot-6 {
         display: inline;
         padding: 0 1em 0 0;
     }
@@ -267,23 +302,21 @@ Media Queries
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 1.5em 1em 2em 5em;
+        margin: 0em 1em 2em 5em;
         font-size: .9em;
     }
 
     .top-nav {
-        width: 250px;
+        width: 300px;
     }
 
     main {
-        width: 95vw;
-        max-width: 1368px;
+        /* max-width: 1024px; */
         margin: auto;
     }
 
     .main-section {
-        width: 95vw;
-        max-width: 1368px;
+        /* max-width: 1024px; */
         margin: auto;
     }
 
@@ -293,7 +326,7 @@ Media Queries
     }
 
     .about-me {
-        max-width: 1024px;
+        /* max-width: 1024px; */
         margin: auto;
     }
 
