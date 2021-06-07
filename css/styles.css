@@ -175,9 +175,6 @@ progress {
     font-size: 1em;
   }
 
-.skills-section {
-    padding: auto;
-}
 
 .skills-section p {
     margin: 0;
@@ -219,7 +216,7 @@ Contact Section
 Media Queries
 --------------------------------*/
 
-@media only screen and (max-width: 767px) {    /* Adds white box around navigation buttons up to the first breakpoint */
+@media only screen and (max-width: 767px) {    /* Adds white box around navigation buttons only until 768px */
     .button {
         width: 80vw;
         max-width: 350px;
@@ -247,7 +244,7 @@ Media Queries
 
     .about-me img {
         float: right;
-        width: 40%;
+        width: 45%;
         margin-left: 3em;
         margin-right: 3em;
     }
